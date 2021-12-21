@@ -18,6 +18,7 @@ body {
     letter-spacing: 0em;
     cursor: pointer;
 }
+
 .module-img-cat {
     height: 378px;
     width: 378px;
@@ -50,6 +51,7 @@ header nav {
     z-index: 10;
     padding: 26px 0;
 }
+
 header nav .cont-menu {
     display: flex;
     /* padding-top: 41px;  */
@@ -254,6 +256,7 @@ header nav ul a {
     background-position: 30px 20px;
     padding-left: 68px;
 }
+
 .cont-subscribe form .btn-sub {
     position: absolute;
     right: 63px;
@@ -264,19 +267,23 @@ header nav ul a {
 footer {
     margin: 0 auto;
 }
+
 .cont-footer {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     padding: 45px 0;
 }
+
 .cont-footer img {
     width: 220px;
 }
+
 .cont-footer ul {
     display: flex;
     align-items: center;
 }
+
 .cont-footer .link-sns::after {
     content: '';
     display: block;
@@ -287,18 +294,25 @@ footer {
     height: 42px;
     margin-right: 20px;
 }
+
 .cont-footer .link-fb::after {
     background: no-repeat 45% 45% #F29D52 url(img/facebook.svg);
 }
+
 .cont-footer .link-insta::after {
     background: no-repeat center #F29D52 url(img/instagram.svg);
 }
+
 .cont-footer .link-youtube::after {
     background: no-repeat center #F29D52 url(img/youtube.svg);
     margin: 0;
 }
 
 /* 모달창 */
+.hidden {
+    display: none;
+}
+
 .modal {
     position: fixed;
     top: 0;
@@ -306,30 +320,51 @@ footer {
     right: 0;
     bottom: 0;
     z-index: 20;
-    justify-content: center;
-    align-items: center;
-    background:rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
 }
-.background-modal {
-    position: absolute;
-}
-.hidden {
-    display: none;
-}
+
 .cont-modal {
     width: 600px;
     height: 400px;
-    background: url(img/modal-bg-img.png);
+    background: no-repeat url(img/modal-bg-img.png);
+    background-size: cover;
     border-radius: 35px;
     background-clip: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px 0 40px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
+
 .cont-modal img {
     width: 110px;
     height: 112px;
+    margin-top: 10px;
+}
+
+.cont-modal strong {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+    color: #D97652;
+}
+.cont-modal .btn-close {
+    width: 190px;
 }
 
 /* 1200px 이상일 때 */
 @media screen and (min-width: 1200px) {
+
     .box1,
     .box2,
     .cont-menu,
