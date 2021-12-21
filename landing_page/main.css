@@ -1,0 +1,339 @@
+@charset 'UTF-8';
+
+body {
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+/* module */
+.btn-origin {
+    height: 50px;
+    width: 140px;
+    border-radius: 40px;
+    background: #D97652;
+    color: #FFFFFF;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    cursor: pointer;
+}
+.module-img-cat {
+    height: 378px;
+    width: 378px;
+    filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.25));
+    border-radius: 30px;
+}
+
+/* box1 - 헤더 */
+header {
+    background: #F2E9D8;
+}
+
+.box1 {
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 헤더 로고 */
+header .logo-top {
+    width: 130px;
+    height: 40px;
+}
+
+/* 헤더 네비게이션 */
+header nav {
+    position: fixed;
+    top: 0;
+    background: #F2E9D8;
+    width: 100%;
+    z-index: 10;
+    padding: 26px 0;
+}
+header nav .cont-menu {
+    display: flex;
+    /* padding-top: 41px;  */
+    /* background: #F2E9D8; */
+    margin: 0 auto;
+}
+
+header nav .cont-float {
+    display: flex;
+    margin-left: auto;
+}
+
+header nav ul {
+    display: flex;
+    margin-right: 10px;
+}
+
+header nav ul a {
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    margin-right: 30px;
+}
+
+/* 헤더 섹션 */
+.box1 section {
+    background: no-repeat url(img/box-cat.png);
+    background-size: 415px 890px;
+    background-position: right 0 top 134px;
+    padding: 300px 0 262px;
+}
+
+.box1 section h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.box1 section p {
+    width: 439px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+/* box2 - 메인 아티클 */
+/* 섹션1 */
+.box2 {
+    margin: 0 auto;
+}
+
+.cont-sec1 {
+    padding: 80px 0 120px;
+}
+
+.cont-sec1::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.cont-sec1 .img-cat {
+    width: 660px;
+    height: 390px;
+    float: left;
+}
+
+.cont-sec1 .cont-txt {
+    float: right;
+    padding: 92px 0 92px 110px;
+    /* padding-left: 110px; */
+    width: calc(100% - 660px);
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.cont-sec1 h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+    margin-bottom: 30px;
+}
+
+.cont-sec1 p {
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+}
+
+/* 섹션2 */
+.cont-sec2 .cont-txt-top h2 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #D97652;
+    margin-bottom: 40px;
+}
+
+.cont-sec2 .cont-txt-top p {
+    margin-bottom: 88px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.cont-sec2 p strong {
+    font-weight: 700;
+    color: #D97652;
+}
+
+.cont-sec2 .cont-img {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+.cont-sec2 .cont-txt-bottom {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 190px;
+}
+
+.cont-sec2 .cont-txt-bottom p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-right: 52px;
+}
+
+/* 구독 섹션 */
+.cont-subscribe {
+    background: linear-gradient(0deg, rgba(242, 233, 216, 0.6), rgba(242, 233, 216, 0.6)), url(img/img_5.jpg);
+    background-size: cover;
+    background-position: 50% 37%;
+    position: relative;
+    height: 340px;
+}
+
+.cont-subscribe form {
+    width: 300px;
+    background: #263140;
+    border-radius: 30px;
+    width: 1280px;
+    position: relative;
+    top: -106px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFFFFF;
+    padding: 50px 58px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont-subscribe form h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.cont-subscribe form p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.cont-subscribe form input {
+    width: 530px;
+    height: 60px;
+    border-radius: 60px;
+    background: no-repeat url(img/mail.svg) #FFFFFF;
+    background-position: 30px 20px;
+    padding-left: 68px;
+}
+.cont-subscribe form .btn-sub {
+    position: absolute;
+    right: 63px;
+    top: 75px;
+}
+
+/* 푸터 */
+footer {
+    margin: 0 auto;
+}
+.cont-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 45px 0;
+}
+.cont-footer img {
+    width: 220px;
+}
+.cont-footer ul {
+    display: flex;
+    align-items: center;
+}
+.cont-footer .link-sns::after {
+    content: '';
+    display: block;
+    clear: both;
+    background: no-repeat center #F29D52 url(img/blog.svg);
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    margin-right: 20px;
+}
+.cont-footer .link-fb::after {
+    background: no-repeat 45% 45% #F29D52 url(img/facebook.svg);
+}
+.cont-footer .link-insta::after {
+    background: no-repeat center #F29D52 url(img/instagram.svg);
+}
+.cont-footer .link-youtube::after {
+    background: no-repeat center #F29D52 url(img/youtube.svg);
+    margin: 0;
+}
+
+/* 모달창 */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    justify-content: center;
+    align-items: center;
+    background:rgba(0, 0, 0, 0.5);
+}
+.background-modal {
+    position: absolute;
+}
+.hidden {
+    display: none;
+}
+.cont-modal {
+    width: 600px;
+    height: 400px;
+    background: url(img/modal-bg-img.png);
+    border-radius: 35px;
+    background-clip: border-box;
+}
+.cont-modal img {
+    width: 110px;
+    height: 112px;
+}
+
+/* 1200px 이상일 때 */
+@media screen and (min-width: 1200px) {
+    .box1,
+    .box2,
+    .cont-menu,
+    footer {
+        width: 1280px;
+    }
+}
